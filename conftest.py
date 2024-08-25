@@ -18,7 +18,7 @@ def webinar_page():
 
 @pytest.fixture(scope='module')
 def browser_page(playwright: Playwright):
-    browser = playwright.chromium.launch(headless=False)
+    browser = playwright.chromium.launch(headless=True)
     context = browser.new_context()
     yield context.new_page()
     context.close()
