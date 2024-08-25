@@ -13,7 +13,7 @@ jobs:
       - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
-          pip install -r requirements.txt
+          pip install -r reqierements.txt
       - name: Ensure browsers are installed
         run: python -m playwright install --with-deps
       - name: Run your tests
