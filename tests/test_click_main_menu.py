@@ -1,11 +1,11 @@
 import time
 
 import allure
-from playwright.sync_api import Playwright
 
 
 
-def test_super_puper_mega_test(playwright: Playwright, main_page, webinar_page, browser_page):
+
+def test_super_puper_mega_test(main_page, webinar_page, browser_page):
     with allure.step("Открыть главную страницу сайта Иннополис"):
         browser_page.goto(main_page.URL)
         time.sleep(2)
